@@ -12,5 +12,18 @@
 
   <body>
     <%= yield %>
+    <div style="position: relative;">
+      <div style="position: absolute;">
+        <md-dialog open>
+          <div slot="content">
+            <label for="field">
+              Field
+            </label>
+
+            <input id="field" type="text" />
+         </div>
+        </md-dialog>
+      </div>
+    </div>
   </body>
 </html>
