@@ -1,7 +1,7 @@
 require "rails_helper"
 
-RSpec.describe "dialog" do
-  it "opens a dialog", js: true do
+RSpec.describe "Dialog" do
+  it "fills a field", js: true do
     visit "/"
     fill_in "Field", with: "Hello"
     expect(page).to have_content("Field")
